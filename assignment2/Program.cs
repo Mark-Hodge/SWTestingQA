@@ -2,10 +2,11 @@
 
 namespace SWTestingQA_assignment2
 {
-    class BodyMassIndex
+    public class BodyMassIndex
     {
         double bmi, pounds;
         int feet, inches;
+        string category = "";
 
         public BodyMassIndex()
         {
@@ -15,8 +16,18 @@ namespace SWTestingQA_assignment2
 
 
         public BodyMassIndex(int usrFeet, int usrInches, double usrPounds)
-        {
+        { 
             feet = usrFeet; inches = usrInches; pounds = usrPounds;
+        }
+
+        public double getBodyMassIndex
+        {
+            get { return bmi; }
+        }
+
+        public string getCategory
+        {
+            get { return category; }
         }
 
         public void CalculateBodyMassIndex()
@@ -34,16 +45,28 @@ namespace SWTestingQA_assignment2
             Console.WriteLine("Your Body Mass Index is: {0:0.##}", bmi);
 
             if (bmi <= 18.5)
+            {
                 Console.WriteLine("Your BMI Category is: Underweight.\n");
+                category = "Underwight";
+            }
 
             if (bmi > 18.5 && bmi <= 24.9)
+            {
                 Console.WriteLine("Your BMI Categegory is: Normal Weight\n");
+                category = "Normal Weight";
+            }
 
             if (bmi > 24.9 && bmi <= 29.9)
+            {
                 Console.WriteLine("Your BMI Categegory is: Overweight\n");
+                category = "Overwight";
+            }
 
             if (bmi >= 30)
+            {
                 Console.WriteLine("Your BMI Categegory is: Obese\n");
+                category = "Obese";
+            }
         }
     }
 
