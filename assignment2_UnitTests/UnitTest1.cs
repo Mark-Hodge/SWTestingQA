@@ -4,6 +4,7 @@ using System;
 
 namespace assignment2_UnitTests
 {
+    // Body Mass Index Unit Tests
     [TestClass]
     public class BodyMassIndexTests
     {
@@ -333,96 +334,171 @@ namespace assignment2_UnitTests
             Assert.AreEqual(expected, actual, 0.09, "BMI calculated outside the tolerable difference");
             Console.WriteLine("Test Case A5 Point 7:\tExpected {0:0.##}\t Actual {0:0.##}", expected, actual);
         }
+    }
 
-        [TestMethod]
-        public void CalculateBodyMassIndex_WhenArgumentsCorrect_ShouldEqualExpected()
-        {
-            // Arrange
-            int usrFeet = 5;
-            int usrInches = 3;
-            double usrPounds = 125.0;
-            double expected = 22.7;
-            BodyMassIndex bodyMassIndex = new BodyMassIndex(usrFeet, usrInches, usrPounds);
-
-            // Act
-            bodyMassIndex.CalculateBodyMassIndex();
-
-            // Assert
-            double actual = bodyMassIndex.getBodyMassIndex;
-            Assert.AreEqual(expected, actual, 0.1, "BMI not calculated correctly");
-        }
-
-        [TestMethod]
-        public void DisplayBMIAndCategory_WhenArgumentsCorrect_ShouldEqualExpected()
-        {
-            // Arrange
-            int usrFeet = 5;
-            int usrInches = 3;
-            double usrPounds = 125.0;
-            string expected = "Normal Weight";
-            BodyMassIndex bodyMassIndex = new BodyMassIndex(usrFeet, usrInches, usrPounds);
-
-            // Act
-            bodyMassIndex.CalculateBodyMassIndex();
-            bodyMassIndex.DisplayBMIAndCategory();
-
-            // Assert
-            string actual = bodyMassIndex.getCategory;
-            Assert.AreEqual(expected, actual, " ", "BMI category not set correctly");
-        }
-
+    // Retirement Age Unit Test
+    [TestClass]
+    public class RetirementAgeTests
+    {
+        // Test Case B1 Point 1: Calculate if Retirement Goal Will Be Met, epsilon = 0.01, (0, 99], Tolerable Difference: 0
         [TestMethod]
         [TestCategory("B1")]
         public void CalculateRetirementAge_TestB1Point1_ShouldEqualExpected()
         {
             // Arrange
-            double age = 50;
-            double salary = 70000;
+            double age = 1;
+            double salary = 10000;
             double percentSaved = 10;
-            double savingsGoal = 200000;
-
-            double expected = 72.0;
+            double savingsGoal = 1000000;
 
             RetirementAge B1 = new RetirementAge(age, salary, percentSaved, savingsGoal);
 
             // Act
             B1.CalculateRetirementAge();
+            B1.DisplayRetirementInfo();
 
             // Assert
-            double actual = B1.getRetirementAge;
-            Console.WriteLine("Test Case B1 Point 1:\tExpected {0:0.##}\t Actual {1:0.##}", expected, actual);
-            Assert.AreEqual(expected, actual, 0.09, "Retirement age not calculated correctly");
-
+            bool actual = B1.getRetirementGoal;
+            Assert.IsTrue(actual);
+            Console.WriteLine("Test Case B1 Point 1:\tActual {0}", actual);
         }
-    }
-    /*
-    [TestClass]
-    public class RetirementAgeTest
-    {
-        // Test Case B1 Point 1: Calculate Retirement Age - Input: Age, Salary, Percent Saved, Savings Goal, epsilon = 0.01, (0, 99], Tolerable Difference = 1
+
+        // Test Case B1 Point 2: Calculate if Retirement Goal Will Be Met, epsilon = 0.01, (0, 99], Tolerable Difference: 0
         [TestMethod]
         [TestCategory("B1")]
-        public void CalculateRetirementAge_TestB1Point1_ShouldEqualExpected()
+        public void CalculateRetirementAge_TestB1Point2_ShouldEqualExpected()
         {
             // Arrange
-            double age = 50;
-            double salary = 70000;
+            double age = 22;
+            double salary = 50000;
             double percentSaved = 10;
-            double savingsGoal = 200000;
-
-            double expected = 72.0;
+            double savingsGoal = 1000000;
 
             RetirementAge B1 = new RetirementAge(age, salary, percentSaved, savingsGoal);
 
             // Act
-            double temp = B1.CalculateRetirementAge();
-            B1.setRetirementAge(temp);
+            B1.CalculateRetirementAge();
+            B1.DisplayRetirementInfo();
 
             // Assert
-            double actual = B1.getRetirementAge;
-            Console.WriteLine("Test Case B1 Point 1:\tExpected {0:0.##}\t Actual {1:0.##}", expected, actual);
-            Assert.AreEqual(expected, temp, 0.09, "Retirement age not calculated correctly");
-
+            bool actual = B1.getRetirementGoal;
+            Assert.IsTrue(actual);
+            Console.WriteLine("Test Case B1 Point 1:\tActual {0}", actual);
         }
-    }*/
+
+        // Test Case B1 Point 3: Calculate if Retirement Goal Will Be Met, epsilon = 0.01, (0, 99], Tolerable Difference: 0
+        [TestMethod]
+        [TestCategory("B1")]
+        public void CalculateRetirementAge_TestB1Point3_ShouldEqualExpected()
+        {
+            // Arrange
+            double age = 25;
+            double salary = 70000;
+            double percentSaved = 15;
+            double savingsGoal = 1000000;
+
+            RetirementAge B1 = new RetirementAge(age, salary, percentSaved, savingsGoal);
+
+            // Act
+            B1.CalculateRetirementAge();
+            B1.DisplayRetirementInfo();
+
+            // Assert
+            bool actual = B1.getRetirementGoal;
+            Assert.IsTrue(actual);
+            Console.WriteLine("Test Case B1 Point 1:\tActual {0}", actual);
+        }
+
+        // Test Case B1 Point 4: Calculate if Retirement Goal Will Be Met, epsilon = 0.01, (0, 99], Tolerable Difference: 0
+        [TestMethod]
+        [TestCategory("B1")]
+        public void CalculateRetirementAge_TestB1Point4_ShouldEqualExpected()
+        {
+            // Arrange
+            double age = 35;
+            double salary = 80000;
+            double percentSaved = 15;
+            double savingsGoal = 1000000;
+
+            RetirementAge B1 = new RetirementAge(age, salary, percentSaved, savingsGoal);
+
+            // Act
+            B1.CalculateRetirementAge();
+            B1.DisplayRetirementInfo();
+
+            // Assert
+            bool actual = B1.getRetirementGoal;
+            Assert.IsTrue(actual);
+            Console.WriteLine("Test Case B1 Point 1:\tActual {0}", actual);
+        }
+
+        // Test Case B1 Point 5: Calculate if Retirement Goal Will Be Met, epsilon = 0.01, (0, 99], Tolerable Difference: 0
+        [TestMethod]
+        [TestCategory("B1")]
+        public void CalculateRetirementAge_TestB1Point5_ShouldEqualExpected()
+        {
+            // Arrange
+            double age = 50;
+            double salary = 100000;
+            double percentSaved = 20;
+            double savingsGoal = 1000000;
+
+            RetirementAge B1 = new RetirementAge(age, salary, percentSaved, savingsGoal);
+
+            // Act
+            B1.CalculateRetirementAge();
+            B1.DisplayRetirementInfo();
+
+            // Assert
+            bool actual = B1.getRetirementGoal;
+            Assert.IsTrue(actual);
+            Console.WriteLine("Test Case B1 Point 1:\tActual {0}", actual);
+        }
+
+        // Test Case B1 Point 6: Calculate if Retirement Goal Will Be Met, epsilon = 0.01, (0, 99], Tolerable Difference: 0
+        [TestMethod]
+        [TestCategory("B1")]
+        public void CalculateRetirementAge_TestB1Point6_ShouldEqualExpected()
+        {
+            // Arrange
+            double age = 75;
+            double salary = 110000;
+            double percentSaved = 20;
+            double savingsGoal = 1000000;
+
+            RetirementAge B1 = new RetirementAge(age, salary, percentSaved, savingsGoal);
+
+            // Act
+            B1.CalculateRetirementAge();
+            B1.DisplayRetirementInfo();
+
+            // Assert
+            bool actual = B1.getRetirementGoal;
+            Assert.IsTrue(actual);
+            Console.WriteLine("Test Case B1 Point 1:\tActual {0}", actual);
+        }
+
+        // Test Case B1 Point 7: Calculate if Retirement Goal Will Be Met, epsilon = 0.01, (0, 99], Tolerable Difference: 0
+        [TestMethod]
+        [TestCategory("B1")]
+        public void CalculateRetirementAge_TestB1Point7_ShouldEqualExpected()
+        {
+            // Arrange
+            double age = 85;
+            double salary = 120000;
+            double percentSaved = 25;
+            double savingsGoal = 1000000;
+
+            RetirementAge B1 = new RetirementAge(age, salary, percentSaved, savingsGoal);
+
+            // Act
+            B1.CalculateRetirementAge();
+            B1.DisplayRetirementInfo();
+
+            // Assert
+            bool actual = B1.getRetirementGoal;
+            Assert.IsTrue(actual);
+            Console.WriteLine("Test Case B1 Point 1:\tActual {0}", actual);
+        }
+    }
 }

@@ -122,19 +122,19 @@ namespace SWTestingQA_assignment2
             double employerContribution = (currentPersonalSavings * 0.35);
             double totalCurrentSavings = (currentPersonalSavings + employerContribution);
           
-            double temp = savingsGoal / totalCurrentSavings;
+            double temp = Math.Ceiling(savingsGoal / totalCurrentSavings);
             retirementAge = (temp + age);
-        }
-
-        public void DisplayRetirementInfo()
-        {
-            Console.WriteLine("The age at which you will meet your goal is {0:0.##}", retirementAge);
 
             if (retirementAge < 100)
                 goalMet = true;
 
             else
                 goalMet = false;
+        }
+
+        public void DisplayRetirementInfo()
+        {
+            Console.WriteLine("The age at which you will meet your goal is {0:0.##}", retirementAge);
 
             if (!goalMet)
                 Console.WriteLine("It is unrealistic that you will meet your goal (Death at 100yrs)\n");
