@@ -14,6 +14,10 @@ namespace SWTestingQA_assignment2
             feet = 0; inches = 0;
         }
 
+        public BodyMassIndex(double usrBMI)
+        {
+            bmi = usrBMI;
+        }
 
         public BodyMassIndex(int usrFeet, int usrInches, double usrPounds)
         { 
@@ -44,10 +48,16 @@ namespace SWTestingQA_assignment2
         {
             Console.WriteLine("Your Body Mass Index is: {0:0.##}", bmi);
 
-            if (bmi <= 18.5)
+            if (bmi < 0)
             {
-                Console.WriteLine("Your BMI Category is: Underweight.\n");
-                category = "Underwight";
+                Console.WriteLine("Your BMI Category is not valid\n");
+                category = "Not Valid";
+            }
+
+            if (bmi >= 0 && bmi <= 18.5)
+            {
+                Console.WriteLine("Your BMI Category is: Underweight\n");
+                category = "Underweight";
             }
 
             if (bmi > 18.5 && bmi <= 24.9)
@@ -59,7 +69,7 @@ namespace SWTestingQA_assignment2
             if (bmi > 24.9 && bmi <= 29.9)
             {
                 Console.WriteLine("Your BMI Categegory is: Overweight\n");
-                category = "Overwight";
+                category = "Overweight";
             }
 
             if (bmi >= 30)
@@ -70,37 +80,67 @@ namespace SWTestingQA_assignment2
         }
     }
 
-    class RetirementAge
+    public class RetirementAge
     {
-        int currentAge, deathAge;
-        double salary, percentSaved, employerMatch, savingsGoal, retirementAge;
-        bool goalMet;
+        double age;
+        int deathAge = 100;
+        double retirementAge;
+        double salary, percentSaved, savingsGoal;
+        double employerMatch = 0.35;
+        bool goalMet = false;
 
-        public RetirementAge(int usrAge, double usrSalary, double usrPercentSaved, double usrSavingsGoal)
+        public RetirementAge()
         {
-            currentAge = usrAge; retirementAge = 0.00; deathAge = 100;
-            salary = usrSalary; percentSaved = usrPercentSaved; employerMatch = 0.35; savingsGoal = usrSavingsGoal;
-            goalMet = false;
+            age = 0.00;
+            retirementAge = 0.00;
+            salary = 0.00;
+            percentSaved = 0.00;
+            savingsGoal = 0.00;
         }
 
-        public void CalculateRetirementGoal()
+        public RetirementAge(double usrAge, double usrSalary, double usrPercentSaved, double usrSavingsGoal)
+        {
+            age = usrAge;
+            salary = usrSalary;
+            percentSaved = usrPercentSaved;
+            savingsGoal = usrSavingsGoal;
+        }
+
+        public bool getRetirementGoal
+        {
+            get { return goalMet; }
+        }
+
+        public double getRetirementAge
+        {
+            get { return retirementAge; }
+        }
+
+        public void CalculateRetirementAge()
         {
             double currentPersonalSavings = (salary * percentSaved);
-            double employerContribution = (currentPersonalSavings + (currentPersonalSavings * 0.35));
+            double employerContribution = (currentPersonalSavings * 0.35);
             double totalCurrentSavings = (currentPersonalSavings + employerContribution);
           
-            retirementAge = Math.Ceiling(savingsGoal / totalCurrentSavings);
+            double temp = savingsGoal / totalCurrentSavings;
+            retirementAge = (temp + age);
         }
 
         public void DisplayRetirementInfo()
         {
             Console.WriteLine("The age at which you will meet your goal is {0:0.##}", retirementAge);
 
-            if (retirementAge >= 100)
+            if (retirementAge < 100)
+                goalMet = true;
+
+            else
+                goalMet = false;
+
+            if (!goalMet)
                 Console.WriteLine("It is unrealistic that you will meet your goal (Death at 100yrs)\n");
 
-            if (retirementAge < 100)
-                Console.WriteLine("It is likely that you will meet your goal\n");
+            if (goalMet)
+                Console.WriteLine("It is likely that you will meet your goal\n");      
         }
     }
 
@@ -214,13 +254,13 @@ namespace SWTestingQA_assignment2
             try
             {
                 // Convert user input to numeric data types.
-                int currentAge = int.Parse(usrCurrentAge);
+                double age = double.Parse(usrCurrentAge);
                 double salary = double.Parse(usrSalary);
                 double percentSaved = (double.Parse(usrPercentSaved) / 100);
                 double savingsGoal = double.Parse(usrSavingsGoal);
 
                 // Check if input is within the allowable bounds.
-                if (currentAge <= 0 || currentAge >= 100)
+                if (age <= 0 || age >= 100)
                     throw new System.ArgumentException();
 
                 if (salary <= 0.00)
@@ -232,8 +272,8 @@ namespace SWTestingQA_assignment2
                 if (savingsGoal <= 0.00)
                     throw new System.ArgumentException();
 
-                RetirementAge retirementAge = new RetirementAge(currentAge, salary, percentSaved, savingsGoal);
-                retirementAge.CalculateRetirementGoal();
+                RetirementAge retirementAge = new RetirementAge(age, salary, percentSaved, savingsGoal);
+                retirementAge.CalculateRetirementAge();
                 retirementAge.DisplayRetirementInfo();
                 return true;
             }

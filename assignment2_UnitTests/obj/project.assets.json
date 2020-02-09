@@ -6896,9 +6896,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\assignment2_UnitTests\\assignment2_UnitTests.csproj",
-      "projectName": "assignment2_UnitTests",
-      "projectPath": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\assignment2_UnitTests\\assignment2_UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\assignment2_UnitTests\\assignment2_UnitTests_BMI.csproj",
+      "projectName": "assignment2_UnitTests_BMI",
+      "projectPath": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\assignment2_UnitTests\\assignment2_UnitTests_BMI.csproj",
       "packagesPath": "C:\\Users\\mhhod\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\assignment2_UnitTests\\obj\\",
       "projectStyle": "PackageReference",
