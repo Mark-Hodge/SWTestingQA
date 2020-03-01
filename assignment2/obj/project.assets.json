@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\assignment2\\assignment2.csproj",
-      "projectName": "assignment2",
-      "projectPath": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\assignment2\\assignment2.csproj",
+      "projectUniqueName": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\assignment2\\assignment3.csproj",
+      "projectName": "assignment3",
+      "projectPath": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\assignment2\\assignment3.csproj",
       "packagesPath": "C:\\Users\\mhhod\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\assignment2\\obj\\",
       "projectStyle": "PackageReference",

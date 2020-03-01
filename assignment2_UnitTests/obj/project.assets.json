@@ -2030,14 +2030,14 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "assignment2/1.0.0": {
+      "assignment3/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "compile": {
-          "bin/placeholder/assignment2.dll": {}
+          "bin/placeholder/assignment3.dll": {}
         },
         "runtime": {
-          "bin/placeholder/assignment2.dll": {}
+          "bin/placeholder/assignment3.dll": {}
         }
       }
     }
@@ -6875,10 +6875,10 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "assignment2/1.0.0": {
+    "assignment3/1.0.0": {
       "type": "project",
-      "path": "../assignment2/assignment2.csproj",
-      "msbuildProject": "../assignment2/assignment2.csproj"
+      "path": "../assignment2/assignment3.csproj",
+      "msbuildProject": "../assignment2/assignment3.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6886,7 +6886,7 @@
       "MSTest.TestAdapter >= 2.0.0",
       "MSTest.TestFramework >= 2.0.0",
       "Microsoft.NET.Test.Sdk >= 16.2.0",
-      "assignment2 >= 1.0.0",
+      "assignment3 >= 1.0.0",
       "coverlet.collector >= 1.0.1"
     ]
   },
@@ -6896,9 +6896,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\assignment2_UnitTests\\assignment2_UnitTests_BMI.csproj",
-      "projectName": "assignment2_UnitTests_BMI",
-      "projectPath": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\assignment2_UnitTests\\assignment2_UnitTests_BMI.csproj",
+      "projectUniqueName": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\assignment2_UnitTests\\assignment3_UnitTests_BMI.csproj",
+      "projectName": "assignment3_UnitTests_BMI",
+      "projectPath": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\assignment2_UnitTests\\assignment3_UnitTests_BMI.csproj",
       "packagesPath": "C:\\Users\\mhhod\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\assignment2_UnitTests\\obj\\",
       "projectStyle": "PackageReference",
@@ -6916,8 +6916,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\assignment2\\assignment2.csproj": {
-              "projectPath": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\assignment2\\assignment2.csproj"
+            "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\assignment2\\assignment3.csproj": {
+              "projectPath": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\assignment2\\assignment3.csproj"
             }
           }
         }

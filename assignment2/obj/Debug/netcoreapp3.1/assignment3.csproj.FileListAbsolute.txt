@@ -1,0 +1,11 @@
+C:\Users\mhhod\source\repos\SWTestingQA\assignment2\bin\Debug\netcoreapp3.1\assignment3.exe
+C:\Users\mhhod\source\repos\SWTestingQA\assignment2\bin\Debug\netcoreapp3.1\assignment3.deps.json
+C:\Users\mhhod\source\repos\SWTestingQA\assignment2\bin\Debug\netcoreapp3.1\assignment3.runtimeconfig.json
+C:\Users\mhhod\source\repos\SWTestingQA\assignment2\bin\Debug\netcoreapp3.1\assignment3.runtimeconfig.dev.json
+C:\Users\mhhod\source\repos\SWTestingQA\assignment2\bin\Debug\netcoreapp3.1\assignment3.dll
+C:\Users\mhhod\source\repos\SWTestingQA\assignment2\bin\Debug\netcoreapp3.1\assignment3.pdb
+C:\Users\mhhod\source\repos\SWTestingQA\assignment2\obj\Debug\netcoreapp3.1\assignment3.AssemblyInfoInputs.cache
+C:\Users\mhhod\source\repos\SWTestingQA\assignment2\obj\Debug\netcoreapp3.1\assignment3.AssemblyInfo.cs
+C:\Users\mhhod\source\repos\SWTestingQA\assignment2\obj\Debug\netcoreapp3.1\assignment3.dll
+C:\Users\mhhod\source\repos\SWTestingQA\assignment2\obj\Debug\netcoreapp3.1\assignment3.pdb
+C:\Users\mhhod\source\repos\SWTestingQA\assignment2\obj\Debug\netcoreapp3.1\assignment3.csprojAssemblyReference.cache
