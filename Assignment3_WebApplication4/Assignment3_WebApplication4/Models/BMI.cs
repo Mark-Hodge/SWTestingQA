@@ -13,6 +13,12 @@ namespace Assignment3_WebApplication4.Models
 
         private double bmiValue;
 
+        public Tuple<double, string> BMITest()
+        {
+            Tuple<double, string> results = Tuple.Create(CalculateBMI(), DetermineCategory());
+            return results;
+        }
+
         public double CalculateBMI()
         {
             double result;
@@ -24,6 +30,7 @@ namespace Assignment3_WebApplication4.Models
             result = (weightKG / heightCM);
             result = Math.Round(result, 1);
             bmiValue = result;
+
             return result;
         }
 
@@ -32,7 +39,7 @@ namespace Assignment3_WebApplication4.Models
             if (bmiValue <= 18.5)
                 return "Underweight";
             else if (bmiValue > 18.5 && bmiValue <= 24.9)
-                return "NormalWeight";
+                return "Normalweight";
             else if (bmiValue > 24.9 && bmiValue <= 29.9)
                 return "Overweight";
             else if (bmiValue > 29.9)

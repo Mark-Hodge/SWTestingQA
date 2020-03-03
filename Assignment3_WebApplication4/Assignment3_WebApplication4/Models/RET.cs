@@ -18,6 +18,14 @@ namespace Assignment3_WebApplication4.Models
         private double retirementAge;
         private bool willMeetGoal;
 
+        public Tuple<double, bool> RETTest()
+        {
+            CalculateRET();
+            DetermineGoalMet();
+            Tuple<double, bool> results = Tuple.Create(retirementAge, willMeetGoal);
+            return results;
+        }
+
         public double CalculateRET()
         {
             double personalSavings = (salary * (saved / 100));
