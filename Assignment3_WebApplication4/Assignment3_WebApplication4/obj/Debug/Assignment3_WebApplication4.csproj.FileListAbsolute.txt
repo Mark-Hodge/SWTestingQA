@@ -50,6 +50,8 @@ C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApplication4\Assignment3_
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApplication4\Assignment3_WebApplication4\bin\roslyn\vbc.rsp
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApplication4\Assignment3_WebApplication4\bin\roslyn\VBCSCompiler.exe
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApplication4\Assignment3_WebApplication4\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApplication4\Assignment3_WebApplication4\bin\Assignment3_WebApplication4.dll.CodeAnalysisLog.xml
+C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApplication4\Assignment3_WebApplication4\bin\Assignment3_WebApplication4.dll.lastcodeanalysissucceeded
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApplication4\Assignment3_WebApplication4\bin\Antlr3.Runtime.dll
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApplication4\Assignment3_WebApplication4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApplication4\Assignment3_WebApplication4\bin\Microsoft.Web.Infrastructure.dll
@@ -72,7 +74,7 @@ C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApplication4\Assignment3_
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApplication4\Assignment3_WebApplication4\bin\Newtonsoft.Json.xml
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApplication4\Assignment3_WebApplication4\bin\Antlr3.Runtime.pdb
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApplication4\Assignment3_WebApplication4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApplication4\Assignment3_WebApplication4\obj\Debug\Assignment3_WebApplication4.csprojAssemblyReference.cache
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApplication4\Assignment3_WebApplication4\obj\Debug\Assignment3_WebApplication4.csproj.CopyComplete
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApplication4\Assignment3_WebApplication4\obj\Debug\Assignment3_WebApplication4.dll
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApplication4\Assignment3_WebApplication4\obj\Debug\Assignment3_WebApplication4.pdb
+C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApplication4\Assignment3_WebApplication4\obj\Debug\Assignment3_WebApplication4.csprojAssemblyReference.cache

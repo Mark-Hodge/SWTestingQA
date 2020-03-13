@@ -16,21 +16,21 @@ namespace Assignment3_WebApplication4.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Detailed Application Information.";
+            ViewBag.Message = "Overview";
 
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
+        //public ActionResult Contact()
+        //{
+        //    ViewBag.Message = "Your contact page";
 
-            return View();
-        }
+        //    return View();
+        //}
 
         public ActionResult BMI()
         {
-            ViewBag.Message = "Your BMI page.";
+            ViewBag.Message = "Your BMI page";
 
             return View();
         }
@@ -48,7 +48,7 @@ namespace Assignment3_WebApplication4.Controllers
 
         public ActionResult RET()
         {
-            ViewBag.Message = "Your Retirement page.";
+            ViewBag.Message = "Your Retirement page";
 
             return View();
         }
