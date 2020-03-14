@@ -19,6 +19,15 @@
     <WebStackScaffolding_IsLayoutPageSelected>False</WebStackScaffolding_IsLayoutPageSelected>
     <WebStackScaffolding_IsPartialViewSelected>False</WebStackScaffolding_IsPartialViewSelected>
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>False</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
+    <GoogleCloudPublishChoice>Gce</GoogleCloudPublishChoice>
+    <GoogleCloudPublishConfiguration>Release</GoogleCloudPublishConfiguration>
+    <GoogleComputeEnginePublishInstanceName>aspnet-1-assignment3</GoogleComputeEnginePublishInstanceName>
+    <GoogleComputeEnginePublishInstanceZone>us-central1-f</GoogleComputeEnginePublishInstanceZone>
+    <GoogleComputeEnginePublishInstanceUserName>
+    </GoogleComputeEnginePublishInstanceUserName>
+    <GoogleComputeEnginePublishOpenWebsite>False</GoogleComputeEnginePublishOpenWebsite>
+    <GoogleComputeEnginePublishLaunchRemoteDebugger>False</GoogleComputeEnginePublishLaunchRemoteDebugger>
+    <GoogleComputeEnginePublishSiteName>assignment3_web</GoogleComputeEnginePublishSiteName>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
