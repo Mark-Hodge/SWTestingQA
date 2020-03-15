@@ -75,3 +75,4 @@ C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp5\bin\Microsoft.CodeDo
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp5\obj\Debug\Assignment3_WebApp5.csproj.CopyComplete
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp5\obj\Debug\Assignment3_WebApp5.dll
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp5\obj\Debug\Assignment3_WebApp5.pdb
+C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp5\obj\Debug\Assignment3_WebApp5.csprojAssemblyReference.cache
