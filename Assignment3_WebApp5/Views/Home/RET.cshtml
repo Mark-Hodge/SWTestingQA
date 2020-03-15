@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Retirement Calculator";
+}
+
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <form action="/Home/RET" method="post">
+        <div>
+            Age: <input type="number" name="age" value="" min="0" max="99" /><br /><br />
+            Salary: <input type="number" name="salary" value="" min="0" max="100000000000000" /><br /><br />
+            % Saved: <input type="number" name="saved" value="" min="0" max="100" /><br /><br />
+            Goal: <input type="number" name="goal" value="" min="0" max="100000000000000" /><br /><br />
+            <input type="submit" value="Calculate" />
+        </div>
+    </form>
+</body>
+</html>
