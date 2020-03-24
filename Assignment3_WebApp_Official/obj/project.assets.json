@@ -12698,11 +12698,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mhhod\\source\\repos\\Assignment3_WebApp_Official\\Assignment3_WebApp_Official.csproj",
+      "projectUniqueName": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\Assignment3_WebApp_Official\\Assignment3_WebApp_Official.csproj",
       "projectName": "Assignment3_WebApp_Official",
-      "projectPath": "C:\\Users\\mhhod\\source\\repos\\Assignment3_WebApp_Official\\Assignment3_WebApp_Official.csproj",
+      "projectPath": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\Assignment3_WebApp_Official\\Assignment3_WebApp_Official.csproj",
       "packagesPath": "C:\\Users\\mhhod\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mhhod\\source\\repos\\Assignment3_WebApp_Official\\obj\\",
+      "outputPath": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\Assignment3_WebApp_Official\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mhhod\\AppData\\Roaming\\NuGet\\NuGet.Config",

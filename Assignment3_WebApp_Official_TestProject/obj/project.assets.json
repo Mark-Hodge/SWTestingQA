@@ -8221,11 +8221,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mhhod\\source\\repos\\Assignment3_WebApp_Official_TestProject\\Assignment3_WebApp_Official_TestProject.csproj",
+      "projectUniqueName": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\Assignment3_WebApp_Official_TestProject\\Assignment3_WebApp_Official_TestProject.csproj",
       "projectName": "Assignment3_WebApp_Official_TestProject",
-      "projectPath": "C:\\Users\\mhhod\\source\\repos\\Assignment3_WebApp_Official_TestProject\\Assignment3_WebApp_Official_TestProject.csproj",
+      "projectPath": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\Assignment3_WebApp_Official_TestProject\\Assignment3_WebApp_Official_TestProject.csproj",
       "packagesPath": "C:\\Users\\mhhod\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mhhod\\source\\repos\\Assignment3_WebApp_Official_TestProject\\obj\\",
+      "outputPath": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\Assignment3_WebApp_Official_TestProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mhhod\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8241,8 +8241,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\mhhod\\source\\repos\\Assignment3_WebApp_Official\\Assignment3_WebApp_Official.csproj": {
-              "projectPath": "C:\\Users\\mhhod\\source\\repos\\Assignment3_WebApp_Official\\Assignment3_WebApp_Official.csproj"
+            "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\Assignment3_WebApp_Official\\Assignment3_WebApp_Official.csproj": {
+              "projectPath": "C:\\Users\\mhhod\\source\\repos\\SWTestingQA\\Assignment3_WebApp_Official\\Assignment3_WebApp_Official.csproj"
             }
           }
         }
