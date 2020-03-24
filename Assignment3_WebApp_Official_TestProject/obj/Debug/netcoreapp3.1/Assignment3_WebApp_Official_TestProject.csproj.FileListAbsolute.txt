@@ -118,14 +118,14 @@ C:\Users\mhhod\source\repos\Assignment3_WebApp_Official_TestProject\obj\Debug\ne
 C:\Users\mhhod\source\repos\Assignment3_WebApp_Official_TestProject\obj\Debug\netcoreapp3.1\Assignment3_WebApp_Official_TestProject.csproj.CopyComplete
 C:\Users\mhhod\source\repos\Assignment3_WebApp_Official_TestProject\obj\Debug\netcoreapp3.1\Assignment3_WebApp_Official_TestProject.dll
 C:\Users\mhhod\source\repos\Assignment3_WebApp_Official_TestProject\obj\Debug\netcoreapp3.1\Assignment3_WebApp_Official_TestProject.pdb
+C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp_Official_TestProject\bin\Debug\netcoreapp3.1\Assignment3_WebApp_Official.Views.dll
+C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp_Official_TestProject\bin\Debug\netcoreapp3.1\Assignment3_WebApp_Official.Views.pdb
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp_Official_TestProject\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp_Official_TestProject\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp_Official_TestProject\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp_Official_TestProject\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp_Official_TestProject\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp_Official_TestProject\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
-C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp_Official_TestProject\bin\Debug\netcoreapp3.1\Assignment3_WebApp_Official.Views.dll
-C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp_Official_TestProject\bin\Debug\netcoreapp3.1\Assignment3_WebApp_Official.Views.pdb
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp_Official_TestProject\bin\Debug\netcoreapp3.1\Assignment3_WebApp_Official_TestProject.deps.json
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp_Official_TestProject\bin\Debug\netcoreapp3.1\Assignment3_WebApp_Official_TestProject.runtimeconfig.json
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp_Official_TestProject\bin\Debug\netcoreapp3.1\Assignment3_WebApp_Official_TestProject.runtimeconfig.dev.json
