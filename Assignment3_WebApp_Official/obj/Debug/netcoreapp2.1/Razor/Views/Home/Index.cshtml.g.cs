@@ -70,7 +70,7 @@ using Assignment3_WebApp_Official.Models;
     <p>");
             EndContext();
             BeginContext(348, 74, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "933f49f8243d4100abb819cf3519622a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "57beb9c01e3d4333b2977186a433b7d7", async() => {
                 BeginContext(399, 19, true);
                 WriteLiteral("Get Started &raquo;");
                 EndContext();
@@ -113,7 +113,7 @@ using Assignment3_WebApp_Official.Models;
         <p>");
             EndContext();
             BeginContext(1293, 68, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "df97a06f85a44c39a78ff175046debb2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "78e0321a086345bc8a03d899d89ece30", async() => {
                 BeginContext(1339, 18, true);
                 WriteLiteral("Learn more &raquo;");
                 EndContext();

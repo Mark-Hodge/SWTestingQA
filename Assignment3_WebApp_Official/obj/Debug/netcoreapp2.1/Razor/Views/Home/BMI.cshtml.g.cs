@@ -87,7 +87,7 @@ Write(ViewBag.Message);
             WriteLiteral("</h3>\r\n\r\n\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(150, 95, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9173c0271b784746adc411e3acb2dfbf", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "90945665fa96442bb32d42029776141c", async() => {
                 BeginContext(156, 82, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title></title>\r\n");
                 EndContext();
@@ -107,12 +107,12 @@ Write(ViewBag.Message);
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(247, 465, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c16025bfa93948dbbdd3c810561227ae", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "58c8777a940a4959a67d23cd9306d084", async() => {
                 BeginContext(253, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(259, 444, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e0b25f1a42e74fdea490aa273ca86a4a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "270bba118c5849319b75acaa4151e6b3", async() => {
                     BeginContext(298, 398, true);
                     WriteLiteral(@"
         <div>
