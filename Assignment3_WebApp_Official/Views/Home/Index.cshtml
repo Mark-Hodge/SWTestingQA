@@ -6,19 +6,19 @@
     <h1>Assignment 3</h1>
     <p class="lead">
         The functionality from previous assignments have been augmented to be accesable
-        via a web interface using the ASP.NET framework. Deployed onto AWS with Elastic Beanstalk DID THIS WORK PART THREE.
+        via a web interface using the ASP.NET framework. Deployed onto AWS with Elastic Beanstalk.
     </p>
-    <p><a href="https://assignment3-webapp-env.azurewebsites.net/Home/BMI" class="btn btn-primary btn-lg">Get Started &raquo;</a></p>
+    <p><a asp-action="BMI" class="btn btn-primary btn-lg">Get Started &raquo;</a></p>
 </div>
 
 <div class="row">
     <div class="col-md-4">
         <h2>Documentation</h2>
         <p>
-            View full assignment documentation on Github. Including submission report outlining specifications on how the project was developed,
-            tested, and deployed.
+            View the full assignment documentation on Github. Including the submission report outlining specifications on how the project was developed
+            and tested, and how it is continously deployed.
         </p>
-        <p><a class="btn btn-default" href="https://github.com/Mark-Hodge/SWTestingQA">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="https://github.com/Mark-Hodge/SWTestingQA/blob/master/README.md">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
         <h2>Source Code</h2>
@@ -28,6 +28,6 @@
     <div class="col-md-4">
         <h2>Pipeline Tools</h2>
         <p>See all the tools/products/services used in this project.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <p><a asp-action="About" class="btn btn-default">Learn more &raquo;</a></p>
     </div>
 </div>
