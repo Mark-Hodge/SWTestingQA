@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.3666" branch-rate="0.1018" version="1.9" timestamp="1585340830" lines-covered="55" lines-valid="150" branches-covered="11" branches-valid="108">
+<coverage line-rate="0.46659999999999996" branch-rate="0.1388" version="1.9" timestamp="1585412027" lines-covered="70" lines-valid="150" branches-covered="15" branches-valid="108">
   <sources>
     <source>C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp_Official\</source>
   </sources>
   <packages>
-    <package name="Assignment3_WebApp_Official" line-rate="0.4296" branch-rate="0.3235" complexity="54">
+    <package name="Assignment3_WebApp_Official" line-rate="0.5468" branch-rate="0.4411" complexity="54">
       <classes>
         <class name="Assignment3_WebApp_Official.Program" filename="Program.cs" line-rate="0" branch-rate="1" complexity="2">
           <methods>
@@ -392,33 +392,33 @@
             <line number="16" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Assignment3_WebApp_Official.Controllers.HomeController" filename="Controllers\HomeController.cs" line-rate="0" branch-rate="0" complexity="14">
+        <class name="Assignment3_WebApp_Official.Controllers.HomeController" filename="Controllers\HomeController.cs" line-rate="0.46869999999999995" branch-rate="0.3333" complexity="14">
           <methods>
-            <method name="Index" signature="()" line-rate="0" branch-rate="1">
+            <method name="Index" signature="()" line-rate="1" branch-rate="1">
               <lines>
-                <line number="14" hits="0" branch="False" />
-                <line number="15" hits="0" branch="False" />
-                <line number="16" hits="0" branch="False" />
+                <line number="14" hits="1" branch="False" />
+                <line number="15" hits="1" branch="False" />
+                <line number="16" hits="1" branch="False" />
               </lines>
             </method>
-            <method name="About" signature="()" line-rate="0" branch-rate="1">
+            <method name="About" signature="()" line-rate="1" branch-rate="1">
               <lines>
-                <line number="19" hits="0" branch="False" />
-                <line number="20" hits="0" branch="False" />
-                <line number="22" hits="0" branch="False" />
-                <line number="23" hits="0" branch="False" />
+                <line number="19" hits="1" branch="False" />
+                <line number="20" hits="1" branch="False" />
+                <line number="22" hits="1" branch="False" />
+                <line number="23" hits="1" branch="False" />
               </lines>
             </method>
-            <method name="BMI" signature="()" line-rate="0" branch-rate="0">
+            <method name="BMI" signature="()" line-rate="1" branch-rate="1">
               <lines>
-                <line number="26" hits="0" branch="False" />
-                <line number="27" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="26" hits="1" branch="False" />
+                <line number="27" hits="1" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="6" type="jump" coverage="0%" />
+                    <condition number="6" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="29" hits="0" branch="False" />
-                <line number="30" hits="0" branch="False" />
+                <line number="29" hits="1" branch="False" />
+                <line number="30" hits="1" branch="False" />
               </lines>
             </method>
             <method name="BMI" signature="(Assignment3_WebApp_Official.Models.BMI)" line-rate="0" branch-rate="0">
@@ -436,16 +436,16 @@
                 <line number="41" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="RET" signature="()" line-rate="0" branch-rate="0">
+            <method name="RET" signature="()" line-rate="1" branch-rate="1">
               <lines>
-                <line number="44" hits="0" branch="False" />
-                <line number="45" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="44" hits="1" branch="False" />
+                <line number="45" hits="1" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="6" type="jump" coverage="0%" />
+                    <condition number="6" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="47" hits="0" branch="False" />
-                <line number="48" hits="0" branch="False" />
+                <line number="47" hits="1" branch="False" />
+                <line number="48" hits="1" branch="False" />
               </lines>
             </method>
             <method name="RET" signature="(Assignment3_WebApp_Official.Models.RET)" line-rate="0" branch-rate="0">
@@ -477,21 +477,21 @@
             </method>
           </methods>
           <lines>
-            <line number="14" hits="0" branch="False" />
-            <line number="15" hits="0" branch="False" />
-            <line number="16" hits="0" branch="False" />
-            <line number="19" hits="0" branch="False" />
-            <line number="20" hits="0" branch="False" />
-            <line number="22" hits="0" branch="False" />
-            <line number="23" hits="0" branch="False" />
-            <line number="26" hits="0" branch="False" />
-            <line number="27" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="14" hits="1" branch="False" />
+            <line number="15" hits="1" branch="False" />
+            <line number="16" hits="1" branch="False" />
+            <line number="19" hits="1" branch="False" />
+            <line number="20" hits="1" branch="False" />
+            <line number="22" hits="1" branch="False" />
+            <line number="23" hits="1" branch="False" />
+            <line number="26" hits="1" branch="False" />
+            <line number="27" hits="1" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="6" type="jump" coverage="0%" />
+                <condition number="6" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="29" hits="0" branch="False" />
-            <line number="30" hits="0" branch="False" />
+            <line number="29" hits="1" branch="False" />
+            <line number="30" hits="1" branch="False" />
             <line number="34" hits="0" branch="False" />
             <line number="35" hits="0" branch="False" />
             <line number="36" hits="0" branch="False" />
@@ -503,14 +503,14 @@
             </line>
             <line number="40" hits="0" branch="False" />
             <line number="41" hits="0" branch="False" />
-            <line number="44" hits="0" branch="False" />
-            <line number="45" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="44" hits="1" branch="False" />
+            <line number="45" hits="1" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="6" type="jump" coverage="0%" />
+                <condition number="6" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="47" hits="0" branch="False" />
-            <line number="48" hits="0" branch="False" />
+            <line number="47" hits="1" branch="False" />
+            <line number="48" hits="1" branch="False" />
             <line number="52" hits="0" branch="False" />
             <line number="53" hits="0" branch="False" />
             <line number="54" hits="0" branch="False" />

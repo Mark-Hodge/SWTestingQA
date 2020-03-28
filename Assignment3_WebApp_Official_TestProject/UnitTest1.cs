@@ -1,6 +1,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.AspNetCore.Mvc;
 using Assignment3_WebApp_Official.Models;
+using Assignment3_WebApp_Official.Controllers;
 using System;
+
 
 namespace Assignment3_WebApp_Official_TestProject
 {
@@ -141,6 +144,85 @@ namespace Assignment3_WebApp_Official_TestProject
             // Assert
             Assert.AreEqual(expected.Item1, actual.Item1, 0.125, "Value of RET does not match expected.");
             Assert.AreEqual(expected.Item2, actual.Item2, "", "Value of Goal does not match expected.");
+        }
+    }
+
+    [TestClass]
+    public class HomeControllerTests
+    {
+        // Test HomeController View - Index
+        [TestMethod]
+        [TestCategory("Controller")]
+        public void Index_ReturnsAViewResult_ViewResultIsNotNull()
+        {
+            // Arrange
+            HomeController controller = new HomeController();
+
+            // Act
+            ViewResult result = controller.Index() as ViewResult;
+
+            // Assert
+            Assert.IsNotNull(result);
+        }
+
+        // Test HomeController View - About
+        [TestMethod]
+        [TestCategory("Controller")]
+        public void About_ReturnsAViewResult_ViewResultIsNotNull()
+        {
+            // Arrange
+            HomeController controller = new HomeController();
+
+            // Act
+            ViewResult result = controller.About() as ViewResult;
+
+            // Assert
+            Assert.IsNotNull(result);
+        }
+
+        // Test HomeController View - BMI
+        [TestMethod]
+        [TestCategory("Controller")]
+        public void BMI_ReturnsAViewResult_ViewResultIsNotNull()
+        {
+            // Arrange
+            HomeController controller = new HomeController();
+
+            // Act
+            ViewResult result = controller.BMI() as ViewResult;
+
+            // Assert
+            Assert.IsNotNull(result);
+        }
+
+        // Test HomeController View - RET
+        [TestMethod]
+        [TestCategory("Controller")]
+        public void RET_ReturnsAViewResult_ViewResultIsNotNull()
+        {
+            // Arrange
+            HomeController controller = new HomeController();
+
+            // Act
+            ViewResult result = controller.RET() as ViewResult;
+
+            // Assert
+            Assert.IsNotNull(result);
+        }
+
+        // Test HomeController View - RET
+        [TestMethod]
+        [TestCategory("Controller")]
+        public void Error_ReturnsAViewResult_ViewResultIsNotNull()
+        {
+            // Arrange
+            HomeController controller = new HomeController();
+
+            // Act
+            ErrorViewModel result = controller.Error() as ErrorViewModel;
+
+            // Assert
+            Assert.IsNotNull(result);
         }
     }
 }
