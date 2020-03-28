@@ -310,8 +310,8 @@ namespace Assignment3_WebApp_Official_TestProject
             var result = controller.About() as ViewResult;
 
             // Assert
-            Assert.IsTrue(result.ViewData["Title"] == "Development Lifecyle Information");
-            Assert.IsTrue(result.ViewData["Message"] == "Application Details");
+            Assert.AreEqual(result.ViewData["Title"], "Development Lifecyle Information");
+            Assert.AreEqual(result.ViewData["Message"], "Application Details");
         }
 
         // Test HomeView - BMI
@@ -326,8 +326,8 @@ namespace Assignment3_WebApp_Official_TestProject
             var result = controller.BMI() as ViewResult;
 
             // Assert
-            Assert.IsTrue(result.ViewData["Title"] == "Body Mass Index Calculator");
-            Assert.IsTrue(result.ViewData["Message"] == "Your BMI page");
+            Assert.AreEqual(result.ViewData["Title"], "Body Mass Index Calculator");
+            Assert.AreEqual(result.ViewData["Message"], "Your BMI page");
         }
 
         // Test HomeView - RET
@@ -342,8 +342,8 @@ namespace Assignment3_WebApp_Official_TestProject
             var result = controller.RET() as ViewResult;
 
             // Assert
-            Assert.IsTrue(result.ViewData["Title"] == "Retirement Calculator");
-            Assert.IsTrue(result.ViewData["Message"] == "Your Retirement page");
+            Assert.AreEqual(result.ViewData["Title"], "Retirement Calculator");
+            Assert.AreEqual(result.ViewData["Message"], "Your Retirement page");
         }
     }
 }
