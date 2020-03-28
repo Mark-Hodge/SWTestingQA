@@ -209,20 +209,5 @@ namespace Assignment3_WebApp_Official_TestProject
             // Assert
             Assert.IsNotNull(result);
         }
-
-        // Test HomeController View - RET
-        [TestMethod]
-        [TestCategory("Controller")]
-        public void Error_ReturnsAViewResult_ViewResultIsNotNull()
-        {
-            // Arrange
-            HomeController controller = new HomeController();
-
-            // Act
-            ErrorViewModel result = controller.Error() as ErrorViewModel;
-
-            // Assert
-            Assert.IsNotNull(result);
-        }
     }
 }
