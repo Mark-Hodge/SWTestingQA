@@ -170,9 +170,9 @@ namespace Assignment3_WebApp_Official_TestProject
     }
 
     [TestClass]
-    public class HomeControllerTests
+    public class ControllerHomeTests
     {
-        // Test HomeController View - Index
+        // Test HomeController - Index
         [TestMethod]
         [TestCategory("Controller")]
         public void Index_ReturnsAViewResult_ViewResultIsNotNull()
@@ -187,7 +187,7 @@ namespace Assignment3_WebApp_Official_TestProject
             Assert.IsNotNull(result);
         }
 
-        // Test HomeController View - About
+        // Test HomeController - About
         [TestMethod]
         [TestCategory("Controller")]
         public void About_ReturnsAViewResult_ViewResultIsNotNull()
@@ -202,7 +202,7 @@ namespace Assignment3_WebApp_Official_TestProject
             Assert.IsNotNull(result);
         }
 
-        // Test HomeController View - BMI
+        // Test HomeController - BMI
         [TestMethod]
         [TestCategory("Controller")]
         public void BMI_ReturnsAViewResult_ViewResultIsNotNull()
@@ -217,7 +217,7 @@ namespace Assignment3_WebApp_Official_TestProject
             Assert.IsNotNull(result);
         }
 
-        // Test HomeController View - BMI HttpPost Null
+        // Test HomeController - BMI HttpPost Null
         [TestMethod]
         [TestCategory("Controller")]
         public void BMIHttpPost_ReturnsAViewResult_ViewResultIsNotNull_ObjectIsNull()
@@ -232,7 +232,7 @@ namespace Assignment3_WebApp_Official_TestProject
             Assert.IsNotNull(result);
         }
 
-        // Test HomeController View - BMI HttpPost Not Null
+        // Test HomeController - BMI HttpPost Not Null
         [TestMethod]
         [TestCategory("Controller")]
         public void BMIHttpPost_ReturnsAViewResult_ViewResultIsNotNull_ObjectIsNotNull()
@@ -248,7 +248,7 @@ namespace Assignment3_WebApp_Official_TestProject
             Assert.IsNotNull(result);
         }
 
-        // Test HomeController View - RET
+        // Test HomeController - RET
         [TestMethod]
         [TestCategory("Controller")]
         public void RET_ReturnsAViewResult_ViewResultIsNotNull()
@@ -263,7 +263,7 @@ namespace Assignment3_WebApp_Official_TestProject
             Assert.IsNotNull(result);
         }
 
-        // Test HomeController View - RET HttpPost Null
+        // Test HomeController - RET HttpPost Null
         [TestMethod]
         [TestCategory("Controller")]
         public void RETHttpPost_ReturnsAViewResult_ViewResultIsNotNull_ObjectIsNull()
@@ -278,7 +278,7 @@ namespace Assignment3_WebApp_Official_TestProject
             Assert.IsNotNull(result);
         }
 
-        // Test HomeController View - RET HttpPost Not Null
+        // Test HomeController - RET HttpPost Not Null
         [TestMethod]
         [TestCategory("Controller")]
         public void RETHttpPost_ReturnsAViewResult_ViewResultIsNotNull_ObjectIsNotNull()
@@ -292,6 +292,58 @@ namespace Assignment3_WebApp_Official_TestProject
 
             // Assert
             Assert.IsNotNull(result);
+        }
+    }
+
+    [TestClass]
+    public class ViewHomeTests
+    {
+        // Test HomeView - About
+        [TestMethod]
+        [TestCategory("View")]
+        public void About_RendersView_ViewDataIsValid()
+        {
+            // Arange
+            HomeController controller = new HomeController();
+
+            // Act
+            var result = controller.About() as ViewResult;
+
+            // Assert
+            Assert.IsTrue(result.ViewData["Title"] == "Development Lifecyle Information");
+            Assert.IsTrue(result.ViewData["Message"] == "Application Details");
+        }
+
+        // Test HomeView - BMI
+        [TestMethod]
+        [TestCategory("View")]
+        public void BMI_RendersView_ViewDataIsValid()
+        {
+            // Arange
+            HomeController controller = new HomeController();
+
+            // Act
+            var result = controller.BMI() as ViewResult;
+
+            // Assert
+            Assert.IsTrue(result.ViewData["Title"] == "Body Mass Index Calculator");
+            Assert.IsTrue(result.ViewData["Message"] == "Your BMI page");
+        }
+
+        // Test HomeView - RET
+        [TestMethod]
+        [TestCategory("View")]
+        public void RET_RendersView_ViewDataIsValid()
+        {
+            // Arange
+            HomeController controller = new HomeController();
+
+            // Act
+            var result = controller.RET() as ViewResult;
+
+            // Assert
+            Assert.IsTrue(result.ViewData["Title"] == "Retirement Calculator");
+            Assert.IsTrue(result.ViewData["Message"] == "Your Retirement page");
         }
     }
 }

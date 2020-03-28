@@ -17,6 +17,7 @@ namespace Assignment3_WebApp_Official.Controllers
 
         public IActionResult About()
         {
+            ViewData["Title"] = "Development Lifecyle Information";
             ViewData["Message"] = "Application Details";
 
             return View();
@@ -24,6 +25,7 @@ namespace Assignment3_WebApp_Official.Controllers
 
         public IActionResult BMI()
         {
+            ViewBag.Title = "Body Mass Index Calculator";
             ViewBag.Message = "Your BMI page";
 
             return View();
@@ -32,6 +34,8 @@ namespace Assignment3_WebApp_Official.Controllers
         [HttpPost]
         public IActionResult BMI(BMI bmi)
         {
+            ViewBag.Title = "Body Mass Index Calculator";
+
             try
             {
                 if (bmi == null)
@@ -55,6 +59,7 @@ namespace Assignment3_WebApp_Official.Controllers
 
         public IActionResult RET()
         {
+            ViewBag.Title = "Retirement Calculator";
             ViewBag.Message = "Your Retirement page";
 
             return View();
@@ -63,6 +68,8 @@ namespace Assignment3_WebApp_Official.Controllers
         [HttpPost]
         public IActionResult RET(RET ret)
         {
+            ViewBag.Title = "Retirement Calculator";
+
             try
             {
                 if (ret == null)
