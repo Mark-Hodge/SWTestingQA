@@ -21,6 +21,11 @@ namespace Assignment3_WebApp_Official.Models
 
         public double CalculateBMI()
         {
+            if (heightFeet == 0 || weightPounds == 0)
+            {
+                return bmiValue;
+            }
+            
             double result;
             int totalInches = ((heightFeet * 12) + heightInches);
             double heightMeters = (totalInches * 0.025);
@@ -36,7 +41,7 @@ namespace Assignment3_WebApp_Official.Models
 
         public string DetermineCategory()
         {
-            if (bmiValue <= 18.5)
+            if (bmiValue > 0 && bmiValue <= 18.5)
                 return "Underweight";
             else if (bmiValue > 18.5 && bmiValue <= 24.9)
                 return "Normalweight";

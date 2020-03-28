@@ -97,6 +97,28 @@ namespace Assignment3_WebApp_Official_TestProject
             Assert.AreEqual(expected.Item1, actual.Item1, 0.125, "Value of BMI does not match expected.");
             Assert.AreEqual(expected.Item2, actual.Item2, "", "Value of Category does not match expected.");
         }
+
+        // Test for Unknown BMI
+        [TestMethod]
+        [TestCategory("BMI")]
+        public void BMI_WhenValuesNonComputable_ShouldBeNotCategorized()
+        {
+            // Arrange
+            int feet = 6; int inches = 0; int weight = -216;
+            double result = -30.0; string category = "NotCategorized";
+
+            BMI bmi = new BMI();
+            bmi.heightFeet = feet; bmi.heightInches = inches; bmi.weightPounds = weight;
+
+            Tuple<double, string> expected = Tuple.Create(result, category);
+
+            // Act
+            Tuple<double, string> actual = bmi.BMITest();
+
+            // Assert
+            Assert.AreEqual(expected.Item1, actual.Item1, 0.125, "Value of BMI does not match expected.");
+            Assert.AreEqual(expected.Item2, actual.Item2, "", "Value of Category does not match expected.");
+        }
     }
 
     [TestClass]
@@ -195,6 +217,37 @@ namespace Assignment3_WebApp_Official_TestProject
             Assert.IsNotNull(result);
         }
 
+        // Test HomeController View - BMI HttpPost Null
+        [TestMethod]
+        [TestCategory("Controller")]
+        public void BMIHttpPost_ReturnsAViewResult_ViewResultIsNotNull_ObjectIsNull()
+        {
+            // Arrange
+            HomeController controller = new HomeController();
+
+            // Act
+            ViewResult result = controller.BMI(bmi: null) as ViewResult;
+
+            // Assert
+            Assert.IsNotNull(result);
+        }
+
+        // Test HomeController View - BMI HttpPost Not Null
+        [TestMethod]
+        [TestCategory("Controller")]
+        public void BMIHttpPost_ReturnsAViewResult_ViewResultIsNotNull_ObjectIsNotNull()
+        {
+            // Arrange
+            HomeController controller = new HomeController();
+            BMI bmi = new BMI();
+
+            // Act
+            ViewResult result = controller.BMI(bmi) as ViewResult;
+
+            // Assert
+            Assert.IsNotNull(result);
+        }
+
         // Test HomeController View - RET
         [TestMethod]
         [TestCategory("Controller")]
@@ -205,6 +258,37 @@ namespace Assignment3_WebApp_Official_TestProject
 
             // Act
             ViewResult result = controller.RET() as ViewResult;
+
+            // Assert
+            Assert.IsNotNull(result);
+        }
+
+        // Test HomeController View - RET HttpPost Null
+        [TestMethod]
+        [TestCategory("Controller")]
+        public void RETHttpPost_ReturnsAViewResult_ViewResultIsNotNull_ObjectIsNull()
+        {
+            // Arrange
+            HomeController controller = new HomeController();
+
+            // Act
+            ViewResult result = controller.RET(ret: null) as ViewResult;
+
+            // Assert
+            Assert.IsNotNull(result);
+        }
+
+        // Test HomeController View - RET HttpPost Not Null
+        [TestMethod]
+        [TestCategory("Controller")]
+        public void RETHttpPost_ReturnsAViewResult_ViewResultIsNotNull_ObjectIsNotNull()
+        {
+            // Arrange
+            HomeController controller = new HomeController();
+            RET ret = new RET();
+
+            // Act
+            ViewResult result = controller.RET(ret) as ViewResult;
 
             // Assert
             Assert.IsNotNull(result);

@@ -28,6 +28,11 @@ namespace Assignment3_WebApp_Official.Models
 
         public double CalculateRET()
         {
+            if (age == 0 || salary == 0 || goal == 0)
+            {
+                return retirementAge;
+            }
+
             double personalSavings = (salary * (saved / 100));
             double empContributeAmount = (personalSavings * empContribution);
 
@@ -45,10 +50,16 @@ namespace Assignment3_WebApp_Official.Models
                 return "It is unlikely your goal will be met";
             }
 
-            else
+            else if (retirementAge < mortality && retirementAge > 0)
             {
                 willMeetGoal = true;
                 return "It is likely your goal will be met";
+            }
+
+            else
+            {
+                willMeetGoal = false;
+                return "It is undetermined your goal will be met";
             }
         }
     }

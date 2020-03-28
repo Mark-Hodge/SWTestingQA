@@ -32,12 +32,25 @@ namespace Assignment3_WebApp_Official.Controllers
         [HttpPost]
         public IActionResult BMI(BMI bmi)
         {
-            double resultBMI = bmi.CalculateBMI();
-            string resultCategory = bmi.DetermineCategory();
-            string result = ("Your BMI is " + (resultBMI.ToString()) + ", You are " + resultCategory);
-            ViewBag.Message = result;
+            try
+            {
+                if (bmi == null)
+                {
+                    throw new ArgumentNullException();
+                }
 
-            return View();
+                double resultBMI = bmi.CalculateBMI();
+                string resultCategory = bmi.DetermineCategory();
+                string result = ("Your BMI is " + (resultBMI.ToString()) + ", You are " + resultCategory);
+                ViewBag.Message = result;
+
+                return View();
+            }
+            catch (ArgumentNullException)
+            {
+                return View();
+            }
+
         }
 
         public IActionResult RET()
@@ -50,12 +63,25 @@ namespace Assignment3_WebApp_Official.Controllers
         [HttpPost]
         public IActionResult RET(RET ret)
         {
-            double resultAge = ret.CalculateRET();
-            string resultGoal = ret.DetermineGoalMet();
-            string result = ("The age you could retire is " + (resultAge.ToString()) + ", " + resultGoal);
-            ViewBag.Message = result;
+            try
+            {
+                if (ret == null)
+                {
+                    throw new ArgumentNullException();
+                }
 
-            return View();
+                double resultAge = ret.CalculateRET();
+                string resultGoal = ret.DetermineGoalMet();
+                string result = ("The age you could retire is " + (resultAge.ToString()) + ", " + resultGoal);
+                ViewBag.Message = result;
+
+                return View();
+            }
+            catch (ArgumentNullException)
+            {
+                return View();
+            }
+
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
