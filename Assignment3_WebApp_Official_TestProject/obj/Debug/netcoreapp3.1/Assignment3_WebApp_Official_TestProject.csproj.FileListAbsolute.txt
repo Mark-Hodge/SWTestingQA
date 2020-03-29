@@ -282,3 +282,5 @@ C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp_Official_TestProject\
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp_Official_TestProject\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Xml.dll
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp_Official_TestProject\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
 C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp_Official_TestProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp_Official_TestProject\bin\Debug\netcoreapp3.1\WebDriver.dll
+C:\Users\mhhod\source\repos\SWTestingQA\Assignment3_WebApp_Official_TestProject\bin\Debug\netcoreapp3.1\WebDriver.Support.dll
