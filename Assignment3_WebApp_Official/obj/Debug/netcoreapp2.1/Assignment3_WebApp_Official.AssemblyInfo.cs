@@ -11,8 +11,11 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Assignment3_WebApp_Official")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Mark Hodge")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("Mark Hodge - 2020")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("A .NET Core MVC application with features for calculating Body Mass Index and Ret" +
+    "irement Age relative to user input.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Assignment3_WebApp_Official")]

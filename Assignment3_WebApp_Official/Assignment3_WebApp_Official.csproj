@@ -3,6 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <UserSecretsId>eab2baab-0670-402c-9e6d-3d24119b7bcc</UserSecretsId>
+    <Authors>Mark Hodge</Authors>
+    <Description>A .NET Core MVC application with features for calculating Body Mass Index and Retirement Age relative to user input.</Description>
+    <Copyright>Mark Hodge - 2020</Copyright>
+    <PackageProjectUrl>https://assignment3-webapp-env.azurewebsites.net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Mark-Hodge/SWTestingQA</RepositoryUrl>
+    <RepositoryType>Git - GitHub - Public</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
