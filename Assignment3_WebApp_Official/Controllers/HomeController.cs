@@ -17,8 +17,8 @@ namespace Assignment3_WebApp_Official.Controllers
 
         public IActionResult About()
         {
-            ViewData["Title"] = "Development Lifecyle Information";
-            ViewData["Message"] = "Application Details";
+            ViewData["Title"] = "About The Application";
+            ViewData["Message"] = "Application Instructions";
 
             return View();
         }

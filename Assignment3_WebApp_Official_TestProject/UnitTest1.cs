@@ -310,8 +310,8 @@ namespace Assignment3_WebApp_Official_TestProject
             var result = controller.About() as ViewResult;
 
             // Assert
-            Assert.AreEqual(result.ViewData["Title"], "Development Lifecyle Information");
-            Assert.AreEqual(result.ViewData["Message"], "Application Details");
+            Assert.AreEqual(result.ViewData["Title"], "About The Application");
+            Assert.AreEqual(result.ViewData["Message"], "Application Instructions");
         }
 
         // Test HomeView - BMI

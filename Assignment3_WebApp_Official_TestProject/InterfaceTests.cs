@@ -181,7 +181,7 @@ namespace Assignment3_WebApp_Official_TestProject
     }
 
     [TestClass]
-    public class NavbarRedirectTests
+    public class InterfaceRedirectTests
     {
         private IWebDriver driver;
         public string url = "https://assignment3-webapp-dev.azurewebsites.net";
